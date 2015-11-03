@@ -1,0 +1,162 @@
+/** Easy Tree style */
+.header-bg{background: url(images/header_bg.png) ;}
+.navbar-brand { background: url(images/logo_title.png) no-repeat top center;text-indent:-9999px;width:332px;height:100px;background-size: cover; background-size:contain; display:block}/* logo size*/
+.easy-tree-title{ font-weight:600; font-size:200%; letter-spacing:5px;  padding:20px; font-family:"微軟正黑體";}
+.easy-tree {
+    min-height: 20px;
+    margin-bottom: 20px;
+    background-color: #f7f5f5;
+    color: #e56155;
+    border: none;
+    border-top: none;
+    padding-bottom: 30px;
+	padding-top:30px;
+	padding-left:20px;font-family:"微軟正黑體";font-size:140%;
+}
+.easy-tree > ul {
+    padding-left: 15px;
+}
+
+.easy-tree li {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 5px 0 5px;
+    position: relative;
+}
+
+.easy-tree li::before, .easy-tree li::after {
+    content: '';
+    left: -30px;
+    position: absolute;
+    right: auto;
+}
+
+.easy-tree li::before {
+    border-left: 1px solid #e56155;
+    bottom: 50px;
+    height: 100%;
+    top: 0;
+    width: 1px;
+}
+
+.easy-tree li::after {
+    border-top: 1px solid #e56155;
+    height: 20px;
+    top: 25px;
+    width: 35px;
+}
+
+.easy-tree li > span {
+    border: 1px solid #e56155;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+.easy-tree li.parent_li > span {
+    cursor: pointer;
+}
+
+
+.easy-tree > ul > li::before, .easy-tree > ul > li::after {
+    border: 0;
+}
+
+.easy-tree li:last-child::before {
+    height: 30px;
+}
+
+.easy-tree li.parent_li > span:hover, .easy-tree li.parent_li > span:hover + ul li span {
+    background: #f6f6f3;
+    color: #e56155;
+}
+
+.easy-tree li.parent_li > span:hover + ul li.li_selected span {
+    background: #e56155;
+    color: #fff;
+}
+
+.easy-tree li > span > a {
+    color: #e56155;
+    text-decoration: none;
+}
+
+.easy-tree li > span > span.glyphicon-folder-close, .easy-tree li > span > span.glyphicon-folder-open {
+    margin-right: 5px;
+}
+
+.easy-tree li.li_selected > span, .easy-tree li.li_selected > span > a {
+    background: #e56155;
+    color: #fff;
+}
+
+.easy-tree li.li_selected > span:hover, .easy-tree li.li_selected > span:hover > a {
+    background: #e56155;
+    color: #fff;
+}
+
+.easy-tree .easy-tree-toolbar {
+    background-color: #e56155;
+}
+
+.easy-tree .easy-tree-toolbar > div {
+    display: inline-block;
+}
+
+.easy-tree .easy-tree-toolbar > div > button {
+    border-radius: 0;
+    margin: 20px 5px;
+}
+
+.easy-tree .easy-tree-toolbar .create .input-group {
+    top: -15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.easy-tree .easy-tree-toolbar .create .input-group input {
+    border-radius: 0;
+}
+
+.easy-tree .easy-tree-toolbar .create .input-group button {
+    border-radius: 0;
+}
+.file-list {
+    min-height: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #e56155;
+    border: none;
+    border-top: none;
+    padding-bottom: 30px;
+	padding-top:30px;
+	padding-left:0px;
+    width:95%;
+}
+.file-list> div{
+	font-family:"微軟正黑體";font-size:140%; line-height:240%; border-bottom:#ebeaea  1px solid; list-style:none;
+}
+.file-list > div > a{
+	text-decoration:none; color:#4E4C4C;
+}
+
+footer{ text-align:center; padding:10px 0px 30px 0px; background-image:url(images/flooter_bg.png); background-repeat:repeat-x; background-position:bottom; color:#FFFFFF;  line-height:30px; }
+footer a { color:#FFFFFF; font-size:90%; text-decoration: none; line-height:30px;}
+footer a:hover {
+	color: #FFCE01;
+	text-decoration: none;
+}
+div.copyw{ color:#FFFFFF; font-size:90%;}
+
+ @media(max-width:480px) {
+.navbar-brand { background: url(images/logo_title2.png) no-repeat top center;text-indent:-9999px;width:323px;height:85px;background-size: cover; background-size:contain;}
+}
+ @media(max-width:320px) {
+.navbar-brand { background: url(images/logo_title2.png) no-repeat top center;text-indent:-9999px;width:220px;height:70px;background-size: cover; background-size:contain; margin-top:5px; margin-bottom:-5px}
+
+}
+@media (max-width: 768px) {
+.header-bg{ background: url(images/header_bg2.png) ;}
+.navbar-brand { background: url(images/logo_title2.png) no-repeat top center;text-indent:-9999px;width:220px;height:70px;background-size: cover; background-size:contain; margin-top:5px; margin-bottom:-5px}
+}
