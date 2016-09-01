@@ -1,5 +1,5 @@
 function init() {
-    $('.easy-tree').EasyTree();
+    //$('.easy-tree').EasyTree();
     treelist.initial();
 }
 var treelist={
@@ -24,7 +24,7 @@ var treelist={
 };
 var List = function(data){
 	this.data=data;
-}
+};
 List.prototype.renderDocument=function(node){
 	var $ul=$('<ul/>'),
 		$li=$('<li/>');
@@ -37,19 +37,8 @@ List.prototype.renderDocument=function(node){
 	$.each(this.data.subDirectory, function(i, val){
 		var l = new List(val);
 		l.renderDocument($li);
-	})
-		// $.each(this.data.Files, function(i, val){
-		// 	var l = new List(val);
-		// 	l.renderFiles($li);
-		// })
-	// }
-	// else {
-	// 	$.each(this.data.Files, function(i, val){
-	// 		var l = new List(val);
-	// 		l.renderFiles($li);
-	// 	})
-	// }
-}
+	});
+};
 List.prototype.renderFiles=function(node){
 	var $ul=$('<ul/>'),
 		$li=$('<li/>');
@@ -72,29 +61,12 @@ List.renderList = function(lists, root){
 		$.each(lists.subDirectory, function(i, val){
 			var l = new List(val);
 			l.renderDocument($li);
-		})
-		// $.each(lists.Files, function(i, val){
-		// 	var l = new List(val);
-		// 	l.renderFiles($li);
-		// })
-}
-List.renderList(data, $('.easy-tree'));
-
+		});
+};
+//List.renderList(data, $('#fileslist'));
 $(function(){
-	window.onload = init();
-	var full = location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '');
-	$('a').on('click', function(e){
-		e.preventDefault();
-		$.ajax({
-			url: full+'/folderDetail?folder='+this.href,
-            type: 'GET',
-    		dataType: 'json',
-    		success: function (msg) {
-        		treelist.filesShow(msg);
-    		},
-    		error: function () {
-        		alert('資料錯誤');
-    		}
-		})
-	})
-})
+	$('#fileslist').treeview({
+		color: "hsl(310, 50%, 50%)",
+		data: data
+	});
+});

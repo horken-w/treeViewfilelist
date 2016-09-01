@@ -1,0 +1,89 @@
+﻿[
+  {
+    "menuChosen": [
+      {
+        "displayname": "最新公告",
+        "url": "",
+        "self": false,
+        "menu": [
+          {
+            "displayname": "105 年選舉專區最新公告",
+            "url": "/cms/3227036",
+            "self": false
+          },
+          {
+            "displayname": "中選會網站使用",
+            "url": "/cms/7644273",
+            "self": true
+          }
+        ]
+      },
+      {
+        "displayname": "關於中選會",
+        "url": "",
+        "self": true,
+        "menu": [
+          {
+            "displayname": "選務系統查詢",
+            "url": "http://59.125.56.87/frontsite/2016/proofreader/voteplace/1/64/000/030/003/0169088187",
+            "self": true
+          }
+        ]
+      },
+      {
+        "displayname": "影音宣導區",
+        "url": "",
+        "self": false,
+        "menu": [
+          {
+            "displayname": "105年選舉專區影音宣導",
+            "url": "/embedVideo/3558098",
+            "self": false
+          },
+          {
+            "displayname": "中選會性別統計專區",
+            "url": "http://web.cec.gov.tw/files/11-1000-525.php",
+            "self": false
+          },
+          {
+            "displayname": "中選會首頁",
+            "url": "http://www.cec.gov.tw",
+            "self": false
+          },
+          {
+            "displayname": "政府資料開放平台",
+            "url": "http://data.gov.tw/node/13119",
+            "self": false
+          }
+        ]
+      },
+      {
+        "displayname": "外部連結區",
+        "url": "",
+        "self": false,
+        "menu": [
+          {
+            "displayname": "中選會主管法規查詢",
+            "url": "http://law.cec.gov.tw/",
+            "self": false
+          },
+          {
+            "displayname": "中選會性別統計專區",
+            "url": "http://web.cec.gov.tw/files/11-1000-525.php",
+            "self": false
+          },
+          {
+            "displayname": "中選會資料庫",
+            "url": "http://db.cec.gov.tw/",
+            "self": false
+          },
+          {
+            "displayname": "中選會主管法規查詢",
+            "url": "http://law.cec.gov.tw/",
+            "self": false
+          }
+        ]
+      }
+    ]
+  }
+]
